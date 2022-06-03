@@ -1,0 +1,11 @@
+version: "3.5"
+services:
+  sso:
+    container_name: "sso-rs"
+    image: "amjadjibon/sso-rs"
+    ports:
+      - "8080:8080"
+    environment:
+      PORT: "8080"
+      RUST_LOG: "debug"
+    command: ["sso-rs", "/app/manifest.yaml"]

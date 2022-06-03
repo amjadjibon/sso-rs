@@ -1,0 +1,21 @@
+port: 8080
+algorithm: "RS256"
+issuer: "https://example.com/"
+subject: "test"
+expiration: 3600
+token_type: "Bearer"
+grant_type: "client_credentials"
+signing_key: ""
+authorization:
+  client1:
+    secret: "secret"
+    scope:
+      - "scope1"
+      - "scope2"
+      - "scope3"
+      - "scope4"
+    audience:
+      - "audience1"
+      - "audience2"
+      - "audience3"
+      - "audience4"
